@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Luvina overview */
+@keyframes slow-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-slow-spin {
+    animation: slow-spin 60s linear infinite; 
+}
+
+/* our amazing customers */
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 25s linear infinite;
+}
+
+.logo-slider-container:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.logo-item {
+    position: relative;
+    width: 320px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-layer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-main {
+    position: relative;
+    max-width: 70%;
+    max-height: 60%;
+    z-index: 2;
+}
+
+.enable {
+    opacity: 0;
+}
+
+.logo-item:hover .enable {
+    opacity: 1;
+}
+
+.logo-item:hover .disable {
+    opacity: 0;
+}
+
+.logo-layer {
+    transition: opacity 0.3s ease;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

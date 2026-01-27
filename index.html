@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luvina Software Interface</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Phone number of country -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
+    <!-- Test captcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <header class="header">
+        <div class="desktop relative h-[65px] 2xl:h-[80px]">
+            <nav class="flex items-center fixed w-full z-50 bg-white">
+                <div class="logo flex items-center justify-center 2xl:w-[620px] 3xl:w-[655px] w-[450px] 2xl:h-[80px] h-[65px]">
+                    <img src="/img/logo.png" alt="Luvina Logo" class="h-10">
+                </div>
+                <div class="flex w-full 3xl:gap-x-10 xl:gap-x-4 gap-x-3 justify-end items-center pr-20">
+                    <ul class="hidden md:flex 3xl:gap-x-10 xl:gap-x-4 gap-x-3 font-medium text-gray-400">
+                        <li><a href="#" class="hover:border-b-4 hover:border-red-600 hover:pb-1">About Us</a></li>
+                        <li><a href="#" class="hover:border-b-4 hover:border-red-600 hover:pb-1">Services</a></li>
+                        <li><a href="#" class="hover:border-b-4 hover:border-red-600 hover:pb-1">Solutions</a></li>
+                        <li><a href="#" class="hover:border-b-4 hover:border-red-600 hover:pb-1">Industries</a></li>
+                        <li><a href="#" class="hover:border-b-4 hover:border-red-600 hover:pb-1">Technologies</a></li>
+                        <li><a href="#" class="hover:border-b-4 hover:border-red-600 hover:pb-1">Case Studies</a></li>
+                        <li><a href="#" class="border-b-4 border-red-600 pb-1">Resources</a></li>
+                    </ul>
+                    <button class="bg-red-700 text-white px-6 py-1 rounded-full font-bold hover:bg-red-500 transition">
+                        Contact Us
+                    </button>
+                    <a href="#">
+                        <svg width=" 24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="languageIconTitle" 
+                            stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path stroke-linecap="round" d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 
+                                    C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"></path>
+                                <path stroke-linecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15"></path>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="mobile">
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="fixed inset-0 z-50 pointer-events-none">
+            <div class="fixed left-0 top-1/3 flex flex-col pointer-events-auto">
+                <div class="bg-blue-600 p-3 text-white">F</div>
+                <div class="bg-black p-3 text-white">X</div>
+                <div class="bg-blue-700 p-3 text-white">in</div>
+            </div>
+
+            <div class="fixed right-10 top-1/4 flex flex-col space-y-6 text-2xl font-bold text-gray-400 pointer-events-auto">
+                <span class="text-red-600">Welcome 01</span>
+                <span class="flex justify-end left-0">02</span>
+                <span class="flex justify-end left-0">03</span>
+                <span class="flex justify-end left-0">05</span>
+                <span class="flex justify-end left-0">06</span>
+                <span class="flex justify-end left-0">07</span>
+                <span class="flex justify-end left-0">08</span>
+                <span class="flex justify-end left-0">09</span>
+                <span class="flex justify-end left-0">10</span>
+            </div>
+        </section>
+        
+        <section class="content-first relative h-screen flex items-center px-20 overflow-hidden">
+            <div class="absolute top-20 left-1/4 w-12 h-12 bg-red-600 rounded-full opacity-80"></div>
+            <div class="absolute bottom-20 left-1/3 w-32 h-32 border-2 border-red-200 rounded-full flex items-center justify-center">
+                <div class="w-20 h-20 bg-red-600 rounded-full"></div>
+            </div>
+            <div class="absolute top-1/2 right-20 w-48 h-48 border-2 border-red-100 rounded-full flex items-center justify-center">
+                <div class="w-32 h-32 bg-red-600 rounded-full"></div>
+            </div>
+    
+            <div class="relative z-10 max-w-4xl">
+                <div class="flex items-start">
+                    <div class="w-24 h-64 bg-red-600 transform -skew-x-12 mr-10 hidden lg:block"></div>
+                    <div>
+                        <h1 class="text-3xl lg:text-5xl font-bold ">
+                            We are Your Dedicated<br> Software Development<br> Outsourcing Partner
+                        </h1>
+                        <button class="mt-10 bg-red-700 hover:bg-red-500 text-white px-8 py-3 rounded-full text-lg font-semibold flex items-center">
+                            Who we are
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Core Values -->
+        <section class="relative min-h-screen flex flex-col justify-center px-8 md:px-20 py-16 text-white overflow-hidden">
+    
+            <div class="absolute inset-0 z-0">
+                <img src="img/bg_pc_home1.png" alt="Background" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+
+            <div class="relative z-10 w-full max-w-7xl mx-auto">
+                
+                <div class="mb-20">
+                    <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tight leading-[0.9]">
+                        Our <br> Core Values
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24">
+                    
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold">Respect</h3>
+                        <ul class="space-y-3 text-gray-200 text-lg leading-snug">
+                            <li>Respecting everyone's views, choices & decisions.</li>
+                            <li>Respecting differences & aiming for common goals.</li>
+                            <li>Respecting promises & commitments.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold">Responsibility</h3>
+                        <p class="text-gray-200 text-lg leading-snug">
+                            Doing our best to fulfill our role. <br>
+                            Taking responsibility comes along with our actions.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold">Efficiency</h3>
+                        <p class="text-gray-200 text-lg leading-snug">
+                            Striving to make the best impact with limited resources. <br>
+                            Taking efficiency as a measure for action.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Industries We Served -->
+        <section class="py-20 bg-white overflow-hidden">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black uppercase mb-6">Industries We Served</h2>
+                <button class="bg-[#CE181E] text-white px-8 py-2 rounded-full font-bold hover:bg-black transition">
+                    View All
+                </button>
+            </div>
+
+            <div class="max-w-9xl mx-auto px-4">
+
+                <div class="flex h-64 overflow-hidden">
+                    <!-- BFSI -->
+                    <div class="relative w-[40%] h-full overflow-hidden group">
+                        <img src="/img/industries-1.png"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition" />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <a class="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl">
+                            BFSI
+                        </a>
+                    </div>
+
+                    <!-- CONSTRUCTION -->
+                    <div
+                        class="relative w-[25%] h-full bg-[#EC181E]
+                            skew-x-[-38deg]
+                            -ml-16 -mr-16
+                            z-20">
+                        <a class="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl"
+                        style="transform: skewX(38deg);">
+                            Construction
+                        </a>
+                    </div>
+
+                    <!-- RETAIL -->
+                    <div class="relative w-[40%] h-full overflow-hidden group">
+                        <img src="/img/industries-2.png"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition" />
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <a class="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl">
+                            Retail & Ecommerce
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="flex flex-wrap md:flex-nowrap h-64">
+                    <div class="w-full md:w-1/4 h-full bg-[#CE181E] flex items-center justify-center z-30">
+                        <a href="#" class="text-white font-bold text-2xl text-center px-4">Human Resources</a>
+                    </div>
+
+                    <div class="relative w-full md:w-1/2 h-full overflow-hidden group md:-ml-10" style="transform: skewX(-38deg);">
+                        <div class="absolute inset-0 w-full h-full transition duration-500 group-hover:scale-110" style="transform: skewX(38deg) scale(1.5); 
+                        background-image: url('/img/industries-3.png'); background-size: cover; background-position: center;"></div>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <a href="#" class="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl" style="transform: skewX(38deg);">Manufacturing</a>
+                    </div>
+
+                    <div class="w-full md:w-1/4 h-full bg-[#F0F0F0] flex items-center justify-center z-10 md:-ml-10" style="transform: skewX(-38deg);">
+                        <a href="#" class="font-bold text-2xl text-[#CE181E]" style="transform: skewX(38deg);">Real Estate</a>
+                    </div>
+
+                    <div class="relative w-full md:w-1/2 h-full overflow-hidden group md:-ml-10">
+                        <img src="/img/industries-4.png" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Healthcare">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <a href="#" class="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl z-10">Healthcare</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap md:flex-nowrap h-64">
+                    <div class="w-full md:w-1/3 h-full bg-[#F0F0F0] flex items-center justify-center z-10">
+                        <a href="#" class="font-bold text-2xl text-[#CE181E]">Travel & Aviation</a>
+                    </div>
+
+                    <div class="relative w-full md:w-1/2 h-full overflow-hidden group md:-ml-10 md:-mr-10 z-20" style="transform: skewX(-38deg);">
+                        <div class="absolute inset-0 w-full h-full transition duration-500 group-hover:scale-110" style="transform: skewX(38deg) scale(1.5); 
+                        background-image: url('/img/industries-5.png'); background-size: cover; background-position: center;"></div>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <a href="#" class="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl text-center" 
+                        style="transform: skewX(38deg);">Logistics <br> & Transportation</a>
+                    </div>
+
+                    <div class="w-full md:w-1/3 h-full bg-[#CE181E] flex items-center justify-center">
+                        <a href="#" class="text-white font-bold text-2xl text-center px-4">Media & Event Planning</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-20 bg-white px-10 lg:px-24">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black uppercase mb-8">Technologies We Use</h2>
+                <button class="bg-red-700 text-white px-6 py-1 rounded-full font-bold hover:bg-red-500 transition">
+                        Browse All
+                </button>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+                
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-front-end.png" alt="Front-end" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide">Front-end</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-back-end.png" alt="Back-end" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide">Back-end</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-mobile.png" alt="Mobile" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide">Mobile</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-cloud.png" alt="Cloud Computing" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide">Cloud Computing</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-devops.png" alt="DevOps" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide leading-tight">DevOps <br> Management Tools</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-analyzing.png" alt="Business Analyzing" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide leading-tight">Business <br> Analyzing</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-auto_test.png" alt="Business Analyzing" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide leading-tight">Automation <br> Test</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-database.png" alt="Business Analyzing" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide leading-tight">Database <br> &Message Queue</span>
+                </div>
+
+                <div class="flex items-center space-x-6 group">
+                    <div class="w-20 h-20 flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                        <img src="/img/5-technology.png" alt="Business Analyzing" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xl font-bold text-gray-700 uppercase tracking-wide leading-tight">Data <br> Technology</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Luvina Overview -->
+        <section class="py-20 bg-[#f4f4f4] px-10 lg:px-24 flex items-center min-h-[600px] overflow-hidden">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <h2 class="text-6xl font-black uppercase mb-12 leading-tight">
+                        Luvina <br> Overview
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8">
+                        <div>
+                            <div class="text-5xl font-black text-black mb-2">20+</div>
+                            <p class="text-gray-700 font-medium leading-tight">
+                                Years of establishment <br> and development
+                            </p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-black text-black mb-2">750+</div>
+                            <p class="text-gray-700 font-medium leading-tight">IT Talents</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-black text-black mb-2">110+</div>
+                            <p class="text-gray-700 font-medium leading-tight">Satisfied clients</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-black text-black mb-2">1000+</div>
+                            <p class="text-gray-700 font-medium leading-tight">
+                                Software <br> projects delivered
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex justify-center items-center">
+                    <div class="relative w-full max-w-[500px] aspect-square">
+                        <img src="img/qua-cau.jpg" alt="Luvina Global Globe" class="w-full h-full object-contain animate-slow-spin">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Amazing Customers -->
+        <section class="py-10 bg-[#f4f4f4] overflow-hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-black uppercase">Our Amazing Customers</h2>
+            </div>
+            <div class="logo-slider-container overflow-hidden">
+                <div class="logo-track">
+
+                    <!-- CRESCO -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-1.png">
+                            <img class="logo-main" src="img/disable-cresco.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-1.png">
+                            <img class="logo-main" src="img/enable-cresco.png">
+                        </div>
+                    </div>
+
+                    <!-- MITSUBISHI -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-2.png">
+                            <img class="logo-main" src="img/disable-mitsubishi.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-2.png">
+                            <img class="logo-main" src="img/enable-mitsubishi.png">
+                        </div>
+                    </div>
+
+                    <!-- NISSHO -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-3.png">
+                            <img class="logo-main" src="img/disable-nissho.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-3.png">
+                            <img class="logo-main" src="img/enable-nissho.png">
+                        </div>
+                    </div>
+
+                    <!-- NRI -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-4.png">
+                            <img class="logo-main" src="img/disable-nri.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-4.png">
+                            <img class="logo-main" src="img/enable-nri.png">
+                        </div>
+                    </div>
+
+                    <!-- OIS -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-5.png">
+                            <img class="logo-main" src="img/disable-ois.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-5.png">
+                            <img class="logo-main" src="img/enable-ois.png">
+                        </div>
+                    </div>
+                    
+                    <!-- ===== DUPLICATE ===== -->
+                    
+                    <!-- CRESCO -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-1.png">
+                            <img class="logo-main" src="img/disable-cresco.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-1.png">
+                            <img class="logo-main" src="img/enable-cresco.png">
+                        </div>
+                    </div>
+
+                    <!-- MITSUBISHI -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-2.png">
+                            <img class="logo-main" src="img/disable-mitsubishi.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-2.png">
+                            <img class="logo-main" src="img/enable-mitsubishi.png">
+                        </div>
+                    </div>
+
+                    <!-- NISSHO -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-3.png">
+                            <img class="logo-main" src="img/disable-nissho.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-3.png">
+                            <img class="logo-main" src="img/enable-nissho.png">
+                        </div>
+                    </div>
+
+                    <!-- NRI -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-4.png">
+                            <img class="logo-main" src="img/disable-nri.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-4.png">
+                            <img class="logo-main" src="img/enable-nri.png">
+                        </div>
+                    </div>
+
+                    <!-- OIS -->
+                    <div class="logo-item group">
+                        <div class="logo-layer disable">
+                            <img class="bg-logo" src="img/slider-disable-5.png">
+                            <img class="logo-main" src="img/disable-ois.png">
+                        </div>
+                        <div class="logo-layer enable">
+                            <img class="bg-logo" src="img/slider-enable-5.png">
+                            <img class="logo-main" src="img/enable-ois.png">
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
+        </section>
+
+        <!-- Trusted by Top Business Leaders From Japan -->
+        <section class="py-10 bg-[#f4f4f4] px-10 lg:px-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="relative w-full lg:w-5/12 flex justify-center">
+                    <div class="relative z-10">
+                        <img src="img/Mr.Nakai-kingo.png" alt="Mr. Nakai Kingo" class="relative z-10 w-full max-w-sm grayscale-0">
+                    </div>
+                </div>
+                <div class="w-full lg:w-7/12 flex flex-col">
+                    <h2 class="text-5xl lg:text-6xl font-black uppercase mb-12 leading-[0.9] flex justify-end text-right">
+                        Trusted by Top<br> Business Leaders<br> From Japan
+                    </h2>
+                    <div class="space-y-12">
+                        <div class="border-t-2 border-gray-300 pt-8 relative">
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-red-600 text-xl">
+                                        <svg class="svg-panel rotate-icon" width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5 18L0.942632 0.749998L26.0574 0.75L13.5 18Z" fill="#CE181E"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="font-bold text-xl uppercase">Sojitz System</span>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-bold text-lg">Mr. Nakai Kingo</p>
+                                    <p class="text-gray-500 italic">Former Director</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed text-lg italic">
+                                "We have collaborated with Luvina on more than 10 projects, from small projects of a few man-months to medium-sized projects of around 50 man-months. 
+                                Luvina is devoted to training Vietnamese young developers with Luvina Academy. They understand Japanese business customs and our IT market. 
+                                They are well equipped in risk management and always deliver on time with satisfactory quality. Everyone I worked with was polite and sincere. 
+                                Luvina is genuinely a reliable partner. I admire their teamwork."
+                            </p>
+                        </div>
+                        <div class="border-t-2 border-gray-300 pt-6 relative opacity-60 hover:opacity-100 transition cursor-pointer">
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-red-600 text-xl">
+                                        <svg class="svg-panel" width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5 18L0.942632 0.749998L26.0574 0.75L13.5 18Z" fill="#CE181E"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="font-bold text-xl uppercase">Cresco Vietnam</span>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-bold text-lg">Mr. Atsushi Hirasawa</p>
+                                    <p class="text-gray-500 italic">Director</p>
+                                </div>
+                                <!-- <p class="text-gray-700 leading-relaxed text-lg italic">
+                                    “We have cooperated with Luvina in terms of software outsourcing since 2015. Since then, we’ve always considered Luvina as our strategic partner. 
+                                    Luvina has always gone the extra mile to support us overcome any difficulties in the process to ensure excellent quality in our software outsourcing process. 
+                                    We would like to combine the development method of Luvina & Cresco to further grow together in the future.”
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="pt-8 flex justify-end">
+                            <button class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition px-10 py-3 rounded-full font-bold uppercase text-sm tracking-widest">
+                                Browse All Stories
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luvina's Partnership -->
+        <section class="py-24 bg-white px-10 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-6xl font-black uppercase tracking-tight text-black">
+                        Luvina's Partnership
+                    </h2>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center gap-20 lg:gap-20 mb-20">
+                    <div class="w-40 md:w-30 transition-transform hover:scale-110 duration-300">
+                        <img src="/img/MagRabbit.png" alt="MagRabbit" class="w-full h-auto  transition">
+                    </div>
+                    
+                    <div class="w-20 md:w-30 transition-transform hover:scale-110 duration-300">
+                        <img src="/img/VDX.png" alt="VDX" class="w-full h-auto  transition">
+                    </div>
+
+                    <div class="w-40 md:w-30 transition-transform hover:scale-110 duration-300">
+                        <img src="/img/HeartCore-1.png" alt="HeartCore" class="w-full h-auto  transition">
+                    </div>
+
+                    <div class="w-40 md:w-30 transition-transform hover:scale-110 duration-300">
+                        <img src="/img/Union.png" alt="GLEAMCORE" class="w-full h-auto  transition">
+                    </div>
+
+                    <div class="w-40 md:w-30 transition-transform hover:scale-110 duration-300">
+                        <img src="/img/perceptiveConsuling-1.png" alt="Perceptive Consulting" class="w-full h-auto  transition">
+                    </div>
+
+                    <div class="w-24 md:w-30 transition-transform hover:scale-110 duration-300">
+                        <img src="/img/Aras-Logo.webp" alt="Aras" class="w-full h-auto  transition">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="bg-red-700 text-white px-6 py-1 rounded-full font-bold hover:bg-red-500 transition">
+                        Become our partner
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Recognitions -->
+        <section class="relative py-24 text-white overflow-hidden" style="background:url('/img/bg_pc_home2.png') center/cover no-repeat;">
+            <div class="max-w-7xl mx-auto px-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter">
+                        Awards & Recognitions
+                    </h2>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8 lg:gap-16">
+                    
+                    <div class="flex flex-col items-center w-40 text-center group">
+                        <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center mb-6 shadow-2xl transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="/img/Tokyo-tech-venture-Sm.webp" alt="Tokyo Tech" class="w-24 object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg leading-tight uppercase">Tokyo Tech <br> Ventures</h3>
+                    </div>
+                    <div class="flex flex-col items-center w-40 text-center group">
+                        <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center mb-6 shadow-2xl transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="/img/LuvinaCertificate-CMMI.webp" alt="CMMI" class="w-24 object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg leading-tight uppercase">CMMI <br> Level 3</h3>
+                    </div>
+                    <div class="flex flex-col items-center w-40 text-center group">
+                        <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center mb-6 shadow-2xl transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="/img/LuvinaCertificate-ISO27001.webp" alt="ISO" class="w-24 object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg leading-tight uppercase">ISO 27001 <br> ISO 9001</h3>
+                    </div>
+                    <div class="flex flex-col items-center w-40 text-center group">
+                        <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center mb-6 shadow-2xl transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="/img/Kuramae-2014_sm.webp.png" alt="Kuramae" class="w-24 object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg leading-tight uppercase">The Kuramae <br> Venture Award</h3>
+                    </div>
+                    <div class="flex flex-col items-center w-40 text-center group">
+                        <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center mb-6 shadow-2xl transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="/img/Logo-Top10-ICT-Vietnam-IT-Outsourcing-Services-2021-600x337-1.webp" alt="Top 10 ICT" class="w-24 object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg leading-tight uppercase text-sm">Top 10 Leading ICT <br> Companies in Vietnam</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build something amazing, together -->
+        <section class="py-24 bg-white px-10 lg:px-24">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <h2 class="text-6xl font-black uppercase leading-tight tracking-tighter text-black">
+                        Build something <br> amazing, together
+                    </h2>
+                    <div class="space-y-1">
+                        <p class="font-bold text-gray-800">Sales and general inquires</p>
+                        <a href="mailto:sales.en@luvina.net" class="text-gray-500 hover:text-gray-700 text-lg">sales.en@luvina.net</a>
+                    </div>
+                </div>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Full name*" class="w-full border border-gray-300 p-4 focus:outline-none focus:border-red-600">
+                        <input type="email" placeholder="E-mail*" class="w-full border border-gray-300 p-4 focus:outline-none focus:border-red-600">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input class="flex border border-gray-300 p-4 items-center gap-2"
+                                id="phone"
+                                type="tel"
+                                placeholder="Phone number"
+                                class="w-full border px-4 py-3 rounded" />
+                        <input type="text" placeholder="Company*" class="w-full border border-gray-300 p-4 focus:outline-none focus:border-red-600">
+                    </div>
+                    <textarea placeholder="How can we help you?" rows="5" class="w-full border border-gray-300 p-4 focus:outline-none focus:border-red-600"></textarea>
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-4">
+                        <div class="g-recaptcha" data-sitekey="6LdWw1csAAAAAOjH60PTaY-2jqU6k3HO39SrQxsq"></div>
+                        <button type="submit" class="bg-red-700 text-white px-6 py-1 rounded-full font-bold hover:bg-red-500 transition">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script>
+            const input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                initialCountry: "us",    
+                preferredCountries: ["us", "vn", "gb"],
+                separateDialCode: true,   
+                utilsScript:
+                "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
+            });
+        </script>
+
+    </main>
+
+    <footer class="bg-[#f2f2f2] pt-20 pb-10 px-10 lg:px-24 border-t border-gray-300">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+            
+            <div class="md:col-span-4 space-y-8">
+                <div class="space-y-4">
+                    <img src="/img/logo.png" alt="Luvina Software" class="h-14">
+                    <p class="text-gray-600 italic leading-relaxed max-w-xs">
+                        Top 10 Vietnamese outsourcing companies with 750+ talents serving the global market since 2004.
+                    </p>
+                </div>
+                
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10">
+                        <img src="/img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="w-10 h-10">
+                        <img src="/img/ins.png" alt="Link in">
+                    </a>
+                    <a href="#" class="w-10 h-10">
+                        <img src="/img/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="#" class="w-10 h-10">
+                        <img src="/img/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="w-10 h-10">
+                        <img src="/img/message.png" alt="message">
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 space-y-4">
+                <ul class="space-y-4 font-bold text-gray-700 uppercase text-sm tracking-wider">
+                    <li><a href="#" class="hover:text-red-600 transition">About us</a></li>
+                    <li><a href="#" class="hover:text-red-600 transition">Solutions</a></li>
+                    <li><a href="#" class="hover:text-red-600 transition">Technologies</a></li>
+                    <li><a href="#" class="hover:text-red-600 transition">Industries</a></li>
+                    <li><a href="#" class="hover:text-red-600 transition">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-red-600 transition">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-3 space-y-6">
+                <h4 class="font-black uppercase text-sm tracking-widest">Our Offices</h4>
+                
+                <div class="space-y-4">
+                    <div class="group border-b border-gray-300 pb-2 cursor-pointer">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="/img/vietnam_flag.png" alt="">
+                                <span class="font-bold uppercase text-sm">Vietnam</span>
+                            </div>
+                            <span class="text-xs transition-transform group-hover:rotate-180">
+                                <svg class="footer-svg-panel" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5_8389)">
+                                            <path d="M0.70874 9.29902L8.56488 1.41113L16.3012 9.16889" stroke="#4A4B4C" stroke-width="2" stroke-miterlimit="10"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5_8389">
+                                                <rect width="17" height="10" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="group border-b border-gray-300 pb-2 cursor-pointer">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="/img/japan_flag.png" alt="">
+                                <span class="font-bold uppercase text-sm">Japan</span>
+                            </div>
+                            <span class="text-xs transition-transform group-hover:rotate-180">
+                                <svg class="footer-svg-panel" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5_8389)">
+                                            <path d="M0.70874 9.29902L8.56488 1.41113L16.3012 9.16889" stroke="#4A4B4C" stroke-width="2" stroke-miterlimit="10"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5_8389">
+                                                <rect width="17" height="10" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="group border-b border-gray-300 pb-2 cursor-pointer">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="/img/usd_flag.png" alt="">
+                                <span class="font-bold uppercase text-sm">United States</span>
+                            </div>
+                            <span class="text-xs transition-transform group-hover:rotate-180">
+                                <svg class="footer-svg-panel" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5_8389)">
+                                            <path d="M0.70874 9.29902L8.56488 1.41113L16.3012 9.16889" stroke="#4A4B4C" stroke-width="2" stroke-miterlimit="10"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5_8389">
+                                                <rect width="17" height="10" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-3 space-y-6">
+                <h4 class="font-black uppercase text-sm tracking-widest">Contact Us</h4>
+                <div class="space-y-4 text-sm text-gray-500">
+                    <p>info@luvina.net</p>
+                    <p>sales.en@luvina.net</p>
+                    <div class="space-y-1">
+                        <p>Contact for Sale: (+84) 888 739 363</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p>Contact for Career: (+84) 865 032 899</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-20 pt-6 border-t border-gray-400 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest">
+            <p>Copyright © Luvina Software JSC.</p>
+            <div class="flex gap-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-black">Terms of Services</a>
+                <span>|</span>
+                <a href="#" class="hover:text-black">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
